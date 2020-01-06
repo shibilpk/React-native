@@ -22,6 +22,7 @@
         curl -0 -L https://npmjs.org/install.sh | sudo sh
 
 
+		
 ~~~~~~~~~~~~Now install Oracle JDK (recommended) ~~~~~~~~~~~~~~~~~`
 # Step 1:
 #     Download the latest JDK(jdk-8u231-linux-x64.tar.gz) from this official site.
@@ -100,6 +101,8 @@
     sudo apt install openjdk-8-jdk
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
+
 #Install Android Studio
 
     sudo add-apt-repository ppa:maarten-fonville/android-studio sudo apt install android-studio
@@ -129,13 +132,16 @@
 		export PATH=$PATH:$ANDROID_HOME/tools
 		export PATH=$PATH:$ANDROID_HOME/tools/bin
 		export PATH=$PATH:$ANDROID_HOME/platform-tools
-
+	#add this line to open auto jdr
+		export JAVA_HOME=/snap/android-studio/81/android-studio/jre
+			#set jre location correctly
+		
 		#then save and exit
 
 	source $HOME/.bash_profile
 	echo $PATH
 
-~~~~~~~~~~~~~~~~~~~``
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Create a new project
 	react-native init ProjectName
 
