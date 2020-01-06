@@ -126,6 +126,8 @@
 	touch .bash_profile
 	gedit $HOME/.bash_profile
 
+	or #edit .bashrc 
+
 	#paste the following 
 		export ANDROID_HOME=$HOME/Android/Sdk
 		export PATH=$PATH:$ANDROID_HOME/emulator
