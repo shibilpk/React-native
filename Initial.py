@@ -110,9 +110,9 @@ sudo apt-get install nodejs
 	
 	update-java-alternatives --list
 	sudo update-alternatives --config java
-		<select>	/usr/lib/jvm/java-11-openjdk-amd64/bin/java   1101      manual mode
+		<select>	/usr/lib/jvm/java-8-openjdk-amd64/bin/java   1101      manual mode
 	sudo  update-alternatives --config javac
-		<select>	/usr/lib/jvm/java-8-oracle/bin/javac   1081      manual mode
+		<select>	/usr/lib/jvm/java-8-openjdk-amd64/bin/javac   1081      manual mode
 	export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 	export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:jre/bin/java::")
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
