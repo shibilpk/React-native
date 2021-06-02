@@ -1,4 +1,5 @@
-﻿# Install nmp and node.js for react.js
+﻿# React-native configuration
+### Install nmp and node.js for react.js
 ```
 sudo apt install nodejs
 sudo apt install npm
@@ -11,11 +12,11 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install nodejs
 ```
 
-# Install VS code and add some extentions
+### Install VS code and add some extentions
 Simple React by Burke Holland
 Prettier - Code formatter by Esben Petersen
 “editor.formateOnSave”: true,
-# Update npm
+### Update npm
 ```
 sudo npm cache clean -f
 sudo npm install -g n
@@ -30,11 +31,11 @@ If you get an error like Cannot find module ‘npmlog’ you can install npm dir
 ```
 curl -0 -L https://npmjs.org/install.sh | sudo sh
 ```
+## Insall Java 
+#Step 1:
+###Download the latest JDK(jdk-8u231-linux-x64.tar.gz) from this official site.
 
-# Step 1:
-###     Download the latest JDK(jdk-8u231-linux-x64.tar.gz) from this official site.
-
-### Step 2: (Open the terminal (Ctrl + Alt + T))
+#Step 2: (Open the terminal (Ctrl + Alt + T))
 ```
 sudo mkdir /usr/lib/jvm
 ```
@@ -105,7 +106,7 @@ java -version
 ```
 #If you get the installed Java version as the output, you have successfully installed the Oracle JDK in your system
 
-## Or Install open JDK
+### Or Install open JDK
 ```
 sudo apt install default-jre
 sudo apt install openjdk-11-jre-headless
@@ -125,7 +126,7 @@ export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:jre/bin/java::")
 
 
 
-## Install Android Studio
+### Install Android Studio
 ```
     sudo add-apt-repository ppa:maarten-fonville/android-studio sudo apt install android-studio
     sudo apt update
@@ -137,7 +138,7 @@ Android SDK Platform
 AVD (Android Virtual Device)
 
 
-# Error permission denied for /dev/kvm
+### Error permission denied for /dev/kvm
 ```
     sudo apt install qemu-kvm
     sudo adduser​ usernameofpc kvm
@@ -168,7 +169,7 @@ export JAVA_HOME=/snap/android-studio/81/android-studio/jre
     source $HOME/.bash_profile
     echo $PATH
 ```
-# Create a new project
+### Create a new project
 ```
     react-native init ProjectName
 ```
@@ -182,31 +183,29 @@ export JAVA_HOME=/snap/android-studio/81/android-studio/jre
     source $HOME/.bash_profile
     react-native run-android
 ```
-# Agree licence of skd
+### Agree licence of skd
 ```
 $ANDROID_HOME/tools/bin/sdkmanager --licenses
                     or
 yes | sdkmanager --licenses
 ```
 
-# Running on mobile phone
+### Running on mobile phone
 On the folder 'Home/Android/Sdk/platform-tools' open terminal
 ```
     sudo apt-get install adb
     adb devices
     sudo adb reverse tcp:8081 tcp:8081  
 ```
-#Error
+### Error
 ```
     sudo usermod -aG plugdev $LOGNAME
 ```
-# Killing a process on port
+### Killing a process on port
 ```
 sudo kill -9 `sudo lsof -t -i:8081`
     #If that doesn't work you could also use $() for command interpolation:
 sudo kill -9 $(sudo lsof -t -i:8081)
 ```
-# File reach error problem
-```
+### File reach error problem
     echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
