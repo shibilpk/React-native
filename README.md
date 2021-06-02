@@ -31,8 +31,6 @@ If you get an error like Cannot find module ‘npmlog’ you can install npm dir
 curl -0 -L https://npmjs.org/install.sh | sudo sh
 ```
 
-        
-~~~~~~~~~~~~Now install Oracle JDK (recommended) ~~~~~~~~~~~~~~~~~`
 # Step 1:
 ###     Download the latest JDK(jdk-8u231-linux-x64.tar.gz) from this official site.
 
@@ -209,4 +207,6 @@ sudo kill -9 `sudo lsof -t -i:8081`
 sudo kill -9 $(sudo lsof -t -i:8081)
 ```
 # File reach error problem
+```
     echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
